@@ -3,7 +3,6 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-@app.route('/')
 @app.route('/api', methods=['GET'])
 def api():
     # user provided parameters
@@ -20,9 +19,12 @@ def api():
             "current_day": current_day,
             "utc_time": utc_now,
             "track": track,
-            "github_file_url": "https://github.com/babashehu01/HNGx/app.py",
-            "github_repo_url": "https://github.com/babashheu01/HNGx",
+            "github_file_url": "https://github.com/babashehu01/HNGx/blob/main/app.py",
+            "github_repo_url": "https://github.com/babashehu01/HNGx",
             "status_code": 200
     }
 
     return jsonify(response)
+
+if __name__ == '__main__':
+        app.run(debug=True)

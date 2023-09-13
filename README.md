@@ -1,4 +1,4 @@
-ckend Stage One Task README
+Backend Stage One Task README
 
 **Welcome to the README for the "Backend Stage One Task."** In this task, you will create and host an endpoint that accepts GET requests with specific query parameters and returns information in JSON format. Below are the details and requirements for the task.
 
